@@ -1,0 +1,109 @@
+:root{
+    --navColor:rgba(21, 44, 91, 1);
+    --yellow: #FFAE4F;
+    --pPurp: #152C5B;
+    --footerText: #707070;
+}
+a{
+    text-decoration: none;
+}
+.nav-link{
+    color: var(--navColor);
+}
+nav{
+    border: 1px solid rgba(236, 236, 236, 1);
+    padding: 15px 0;
+}
+.title p{
+    color: var(--pPurp);
+    width: 50%;
+}
+p{
+    color: var(--pPurp);
+}
+h1,h4{
+    color: var(--navColor);
+}
+h1 span,h4 span{
+    color: var(--yellow);
+}
+h4{
+    font-weight: 600;
+}
+.jumbotron .button{
+    color: white;
+    background: linear-gradient(180deg, rgba(255, 173, 77, 0.5) 0%, #FFAE4F 100%);
+    top: 50px;
+    border: none;
+}
+.button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    position: relative;
+    color: var(--pPurp);
+    border: 2px solid var(--yellow);
+    top: 30px;
+}
+.jumbotron-img{
+    display: inline-block;
+    position: relative;
+}
+.jumbotron-img::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    border-radius: 15px;
+    z-index: -1;
+    border: 1px solid #ECECEC;
+}
+h5{
+    color: var(--pPurp);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: -10px 0 20px 0;
+}
+.content p{
+    width: 90%;
+}
+.content .third-p{
+    width: 95%;
+}
+.about{
+    background: var(--yellow);
+    color: white;
+}
+.tools{
+    width: 50% !important;
+}
+.img-tools{
+    transform: scale(.6);
+}
+footer{
+    border-top: 1px solid #ECECEC;
+}
+footer p{
+    margin: unset;
+    color: var(--footerText);
+}
+@keyframes pulse{
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0) scale(.6) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translate(0, 10px);
+        transform: translate(0, 10px) scale(.6) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0) scale(.6) rotate(360deg);
+    }
+}
+.react{
+    animation: pulse 2s infinite;
+}
